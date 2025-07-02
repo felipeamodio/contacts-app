@@ -4,6 +4,7 @@ import { Input } from "@/components/Input";
 import { Feather } from "@expo/vector-icons";
 import { theme } from "@/theme";
 import { useState } from "react";
+import { Contact } from "@/components/Contact";
 
 export function Home() {
   const [name, setName] = useState("");
@@ -26,6 +27,13 @@ export function Home() {
           />
         </Input>
       </View>
+
+      <Contact
+        contact={{
+          name: "Felipe",
+          image: require("@/assets/avatar.png"),
+        }}
+      />
     </View>
   );
 }
